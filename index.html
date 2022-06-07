@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="./imgs/portfolio-logo2.png" alt="">
+            <h1>myPortfolio</h1>
+        </div>
+
+        <div class="nav-bar-choices">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Breakdown</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="whole-container">
+        <article class="left-container">
+            <section class="profile-info">
+                <h1>Harold Aquino</h1>
+                <div class="personal-info">
+                    <div>
+                         <img src="./imgs/myspace-default-img.png" alt="">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Male</p>
+                            <p>Los Angeles,</p>
+                            <p>California</p>
+                        </div>
+                        <p>Last Login: 5/29/2008</p>
+                    </div>
+                </div>
+                <p>View My: <a href="">Resume</a></p>
+            </section>
+            <section class="contact-info">
+                <h4>Contacting Harold Aquino</h4>
+                <div class="contact-buttons">
+                    <div>
+                        <button id="contact" >Send Message</button>
+                        <button>Add to Friends</button>
+                        <button>Instant Message</button>
+                        <button>Add to Group</button>
+                    </div>
+                    <div>
+                        <button>Forward to Friend</button>  
+                        <button>Add to Favorites</button>
+                        <button>Block User</button>
+                        <button>Report User</button>
+                    </div>            
+                </div>
+
+            </section>
+            <section class="personal-urls">
+                <p>Github URL:</p>
+                <a href="">github link</a>
+                <p>LinkedIn URL:</p>
+                <a href="">linkedin link</a>
+            </section>
+
+            <section class="personal-interest">
+                <h4>Harold Aquino's Interests</h4>
+                <div class="interest-contents">
+                    <div>
+                        <h5>Sports</h5>
+                        <p>NBA and Lakers fan!</p>
+                    </div>
+                    <div>
+                        <h5>Food</h5>
+                        <p>Coffee and Chicken Sandwhich!</p>
+                    </div>
+                    <div>
+                        <h5>Heroes</h5>
+                        <p>The Flash</p>
+                    </div>
+                    <div>
+                        <h5>Books</h5>
+                        <p>Some book about once or twice a year?</p>
+                    </div>
+                </div>
+                
+            </section>
+        </article>
+
+        <article class="right-container">
+            <section class="extended-network">
+                <h1>Harold Aquino's Skills</h1>
+                <div class="skils">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JS</p>    
+                </div>
+
+            </section>
+            <section class="project-entrys">
+                <p>Harold Aquino's Latest Project Entry</p>
+            </section>
+            <section class="about-me">
+                <h4>Harold Aquino's Blurbs</h4>
+                <div>
+                    <h5 class="span">About me:</h5>
+                    <p>Front web developer with interest of creating fun personal projects</p>                    
+                </div>
+
+    
+            </section>
+            <section class="friends-info">
+                <h4>Harold Aquino's Friend Space</h4>
+                <div>
+                    <h5>Harold Aquino has  <span class="span">1</span> friends.</h5>
+                    <div class="tom">
+                        <a href="">Tom</a>
+                        <img src="./imgs/tom-myspace.jpeg" alt="">
+                    </div>                    
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <div id="projects" class="projects">
+        <h4>Featured Projects</h4>
+        <article class="project-contents">
+            <section>
+                <img src="./imgs/tom-myspace.jpeg" alt="">
+                <div>
+                    Project One
+                </div>
+            </section>
+            <section>
+                <img src="./imgs/tom-myspace.jpeg" alt="">
+                <div>
+                    Project Two
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div id="contact" class="contact">
+        <div>
+            <h4>Contact</h4>
+        </div>
+
+        <form action="">
+            <p>Have a question or comment?</p>
+            <div class="input">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name">
+                <small class="error"></small>
+            </div>
+            <div class="input">
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Your e-mail">
+                <small class="error"></small>
+            </div>
+            <div class="input">
+                <label for="message">Message:</label>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <small class="error"></small>
+            </div>
+
+            <!-- <div>
+                <button type="reset">Reset</button>
+                <button type="submit" id="submit">Submit</button>
+            </div> -->
+            
+
+        </form>
+    </div>
+</body>
+</html>
