@@ -67,13 +67,14 @@ body > div {
 }
 
 .hamburger {
+  cursor: pointer;
   display: none;
   background-color: transparent;
   border: none;
   color: white;
   font-size: 3rem;
-  margin-right: 1rem;
-  width: 5%;
+  /* margin-right: 1rem; */
+  width: 25%;
 }
 
 .hamburger-choices {
@@ -95,11 +96,7 @@ body > div {
   gap: 1rem;
 }
 
-.hide {
-  display: none;
-}
-
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   body > div {
     height: auto;
   }
@@ -118,6 +115,10 @@ body > div {
     gap: 1rem;
   }
 
+  .hide {
+    display: none;
+  }
+
   .whole-container {
     display: flex;
     flex-direction: column;
@@ -129,6 +130,17 @@ body > div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .modal-content {
+    padding-top: 0.25rem;
+    height: 25%;
+    width: 100%;
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -197,20 +209,28 @@ body > div {
 }
 
 .contact-buttons > div {
-  gap: 1rem;
-}
-
-.contact-info > div > div {
+  /* outline: solid red; */
   display: flex;
   flex-direction: column;
+  margin-right: auto;
+  gap: 1rem;
   width: 50%;
 }
+
+/* .contact-info > div > div {
+  outline: solid red;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  background-color: black;
+  width: 100%;
+} */
 
 .contact-info > div > div > a {
   cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   background-color: transparent;
   border: none;
   color: #65a7d1;
@@ -474,7 +494,7 @@ section > div > .project-buttons > a {
   border-left: none;
   border-top: none;
   border-bottom: solid #afd3ed 2.5px;
-  border-right: solid #afd3ed 2.5px;
+  border-right: none;
   width: 70%;
 }
 
@@ -483,7 +503,7 @@ section > div > .project-buttons > a {
   border-left: none;
   border-top: none;
   border-bottom: solid #afd3ed 2.5px;
-  border-right: solid #afd3ed 2.5px;
+  border-right: none;
 }
 
 .contact-buttons {
@@ -513,21 +533,16 @@ section > div > .project-buttons > a {
 } */
 
 /* MODAL */
-.modal-container {
-  display: block;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .modal-content {
   padding-top: 0.25rem;
   height: 15%;
   width: 35%;
   background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .content-header {
@@ -540,6 +555,7 @@ section > div > .project-buttons > a {
 }
 
 .content-header > button {
+  cursor: pointer;
   width: 5%;
   border: none;
   background-color: lightgray;
@@ -556,6 +572,7 @@ section > div > .project-buttons > a {
 }
 
 .content-body > button {
+  cursor: pointer;
   width: 15%;
   border: none;
   background-color: lightgray;

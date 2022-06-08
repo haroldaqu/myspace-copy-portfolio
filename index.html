@@ -27,14 +27,26 @@
             </ul>
         </div>
     </nav>
-    
-    <ul class="hamburger-choices hide">
+
+    <ul class="hide hamburger-choices">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#">Resume</a></li>
-        <!-- <li><a href="#">Breakdown</a></li> -->
+        <li><a href="#">Breakdown</a></li>
     </ul>
+
+    <dialog class="modal-content">
+        <div class="content-header">
+            <h3>Message</h3>
+            <button class="ok-btn">X</button>
+        </div>
+        <div class="content-body">
+            <p id="statement">Hello</p>
+            <p> <span style="color: blue;">Fun Fact:</span> <span class="fun-fact"></span></p>
+            <Button class="ok-btn">OK</Button>
+        </div>
+    </dialog>
 
     <div id="home" class="whole-container">
         <article class="left-container">
@@ -59,16 +71,40 @@
                 <h4>Contacting Harold Aquino</h4>
                 <div class="contact-buttons">
                     <div>
-                        <a href="#contact"> <img src="./imgs/message-icon2.png" alt=""> Send Message</a>
-                        <a class="open-modal"><img src="./imgs/add-to-friends-icon.png" alt=""> Add to Friends</a>
-                        <a class="open-modal"><img src="./imgs/instant-msg-icon.png" alt=""> Instant Message</a>
-                        <a class="open-modal"><img src="./imgs/add-to-group-icon.png" alt=""> Add to Group</a>
+                        <a href="#contact" title="directs to contact"> 
+                            <img src="./imgs/message-icon2.png" alt=""> 
+                            <p >Send Message</p>
+                        </a>
+                        <a class="open-modal" title="opens modal">
+                            <img src="./imgs/add-to-friends-icon.png" alt=""> 
+                            <p class="modal-innertext">Add to Friends</p>
+                        </a>
+                        <a class="open-modal" title="opens modal">
+                            <img src="./imgs/instant-msg-icon.png" alt=""> 
+                            <p class="modal-innertext">Instant Message</p>
+                        </a>
+                        <a class="open-modal" title="opens modal">
+                            <img src="./imgs/add-to-group-icon.png" alt=""> 
+                            <p class="modal-innertext">Add to Group</p>
+                        </a>
                     </div>
                     <div>
-                        <a href="mailto:"   target="_blank"><img src="./imgs/forward-to-friend-icon.png" alt=""> Forward to Friend</a>  
-                        <a class="open-modal"><img src="./imgs/add-to-favorites-icon.png" alt=""> Add to Favorites</a>
-                        <a class="open-modal"><img src="./imgs/block-user-icon.png" alt=""> Block User</a>
-                        <a class="open-modal"><img src="./imgs/rank-user-icon.png" alt=""> Rank User</a>
+                        <a href="mailto:"   target="_blank" title="opens email">
+                            <img src="./imgs/forward-to-friend-icon.png" alt="">
+                            <p>Forward to Friend</p>
+                        </a>  
+                        <a class="open-modal" title="opens modal">
+                            <img src="./imgs/add-to-favorites-icon.png" alt=""> 
+                            <p class="modal-innertext">Add to Favorites</p>
+                        </a>
+                        <a class="open-modal" title="opens modal">
+                            <img src="./imgs/block-user-icon.png" alt=""> 
+                            <p class="modal-innertext">Block User</p>
+                        </a>
+                        <a class="open-modal" title="opens modal">
+                            <img src="./imgs/rank-user-icon.png" alt=""> 
+                            <p class="modal-innertext">Rank User</p>
+                        </a>
                     </div>            
                 </div>
 
