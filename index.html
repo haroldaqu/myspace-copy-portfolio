@@ -6,24 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="logo">
-            <img src="./imgs/portfolio-logo2.png" alt="">
+        <a href="#home" class="logo">
+            <img src="./imgs/portfolio-logo2.png" alt="" href="#home"> 
             <h1>myPortfolio</h1>
-        </div>
-
-        <div class="nav-bar-choices">
+        </a>
+        <button class="hamburger" id="hamburger"> 
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="nav-bar-choices" id="nav-bar-choices">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Resume</a></li>
-                <li><a href="#">Breakdown</a></li>
+                <!-- <li><a href="#">Breakdown</a></li> -->
             </ul>
         </div>
     </nav>
+    
+    <ul class="hamburger-choices hide">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Resume</a></li>
+        <!-- <li><a href="#">Breakdown</a></li> -->
+    </ul>
 
     <div id="home" class="whole-container">
         <article class="left-container">
@@ -48,23 +59,23 @@
                 <h4>Contacting Harold Aquino</h4>
                 <div class="contact-buttons">
                     <div>
-                        <button id="contact" >Send Message</button>
-                        <button>Add to Friends</button>
-                        <button>Instant Message</button>
-                        <button>Add to Group</button>
+                        <a href="#contact"> <img src="./imgs/message-icon2.png" alt=""> Send Message</a>
+                        <a class="open-modal"><img src="./imgs/add-to-friends-icon.png" alt=""> Add to Friends</a>
+                        <a class="open-modal"><img src="./imgs/instant-msg-icon.png" alt=""> Instant Message</a>
+                        <a class="open-modal"><img src="./imgs/add-to-group-icon.png" alt=""> Add to Group</a>
                     </div>
                     <div>
-                        <button>Forward to Friend</button>  
-                        <button>Add to Favorites</button>
-                        <button>Block User</button>
-                        <button>Report User</button>
+                        <a href="mailto:"   target="_blank"><img src="./imgs/forward-to-friend-icon.png" alt=""> Forward to Friend</a>  
+                        <a class="open-modal"><img src="./imgs/add-to-favorites-icon.png" alt=""> Add to Favorites</a>
+                        <a class="open-modal"><img src="./imgs/block-user-icon.png" alt=""> Block User</a>
+                        <a class="open-modal"><img src="./imgs/rank-user-icon.png" alt=""> Rank User</a>
                     </div>            
                 </div>
 
             </section>
             <section class="personal-urls">
                 <p>Github URL:</p>
-                <a href="">github link</a>
+                <a href="https://github.com/haroldaqu" target="_blank">https://github.com/haroldaqu</a>
                 <p>LinkedIn URL:</p>
                 <a href="">linkedin link</a>
             </section>
@@ -92,19 +103,20 @@
                 
             </section>
         </article>
-
         <article class="right-container">
             <section class="extended-network">
                 <h1>Harold Aquino's Skills</h1>
                 <div class="skils">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JS</p>    
+                    <img src="./imgs/html-icon.png" alt="">
+                    <img src="./imgs/css-icon.png" alt="">
+                    <img src="./imgs/javascript-icon.png" alt="">
                 </div>
 
             </section>
             <section class="project-entrys">
-                <p>Harold Aquino's Latest Project Entry</p>
+                <p class="project-header">Harold Aquino's Latest Project Entry</p>
+                <p>Search NBA Player (<a href="#projects">view more</a>)</p>
+                <p>Philipino Restaurant (<a href="#projects">view more</a>)</p>
             </section>
             <section class="about-me">
                 <h4>Harold Aquino's Blurbs</h4>
@@ -132,15 +144,28 @@
         <h4>Featured Projects</h4>
         <article class="project-contents">
             <section>
-                <img src="./imgs/tom-myspace.jpeg" alt="">
+                <img src="./imgs/nba-player-search-pic1.png" alt="">
                 <div>
-                    Project One
+                    <h1>NBA Player Search</h1>
+                    <h3>About:</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem facere quidem mollitia amet fugiat a pariatur voluptatibus labore rem?</p>
+                    <div class="project-buttons">
+                        <a>Live</a>
+                        <a href="https://github.com/haroldaqu/search-nba-players" target="_blank">Code</a>
+                    </div>
                 </div>
             </section>
             <section>
-                <img src="./imgs/tom-myspace.jpeg" alt="">
+                <img src="./imgs/phil-restaurant-pic1.png" alt="">
                 <div>
-                    Project Two
+                    <h1>Philippino Restaurant</h1>
+                    <h3>About:</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem facere quidem mollitia amet fugiat a pariatur
+                        voluptatibus labore rem?</p>
+                    <div class="project-buttons">
+                        <a>Live</a>
+                        <a href="https://github.com/haroldaqu/restaurant-page" target="_blank">Code</a>
+                    </div>
                 </div>
             </section>
         </article>
@@ -151,7 +176,6 @@
         <div>
             <h4>Contact</h4>
         </div>
-
         <form action="">
             <p>Have a question or comment?</p>
             <div class="input">
@@ -161,7 +185,7 @@
             </div>
             <div class="input">
                 <label for="email">Email:</label>
-                <input type="text" id="email" placeholder="Your e-mail">
+                <input type="email" id="email" placeholder="Your e-mail">
                 <small class="error"></small>
             </div>
             <div class="input">
@@ -170,13 +194,28 @@
             <small class="error"></small>
             </div>
 
-            <!-- <div>
+            <div class="contact-buttons">
                 <button type="reset">Reset</button>
                 <button type="submit" id="submit">Submit</button>
-            </div> -->
-            
-
+            </div>
         </form>
     </div>
+
+
+    <!-- <article class="modal-container hide">
+        <div class="modal-content hide">
+            <div class="content-header">
+                <h3>Message</h3>
+                <button>X</button>
+            </div>
+            <div class="content-body">
+                <p id="statement">
+                    Hello
+                </p>
+                <Button>OK</Button>
+            </div>
+        </div>
+    </article> -->
+    <script src="script.js"></script>
 </body>
 </html>
