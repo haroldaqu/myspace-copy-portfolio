@@ -7,7 +7,7 @@ Live: https://haroldaquino.com/ **(ctrl + click to open in a new tab)**
 1. **Purpose:**
     - Creating a fun and nostalgic portfolio 
 
-2. **New skills learned:**
+2. **Skills learned:**
     - Mobile responsiveness
        - using min and max for height and width to set limit on element sizes
        - exclusively using realtive values (rem, em, %, etc..) allowing elements to shrink/grow based on screen size
