@@ -1,7 +1,7 @@
 # Harold Aquino Portfolio 
 A Myspace page clone when viewing another users profile with the contents changed to fit as my portfolio. 
 
-Live: https://haroldaquino.com/
+Live: https://haroldaquino.com/ (ctrl + click to open in a new tab)
 
 ## Overview 
 1. Purpose:
