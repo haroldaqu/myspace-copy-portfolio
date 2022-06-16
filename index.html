@@ -7,6 +7,7 @@
     <title>Harold Aquino</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <nav class="nav-bar">
@@ -20,7 +21,7 @@
         <div class="nav-bar-choices" id="nav-bar-choices">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#project">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="https://drive.google.com/file/d/1dZ_7NMbKstRjIguFZhIg7142hl5sXQVU/view?usp=sharing" target="_blank">Resume</a></li>
             </ul>
         </div>
@@ -28,7 +29,7 @@
 
     <ul class="hide hamburger-choices">
         <li><a href="#home">Home</a></li>
-        <li><a href="#project">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="https://drive.google.com/file/d/1dZ_7NMbKstRjIguFZhIg7142hl5sXQVU/view?usp=sharing" target="_blank">Resume</a></li>
     </ul>
 
@@ -45,7 +46,6 @@
     </dialog>
 
     <div id="home" class="whole-container">
-
         <article class="left-container">
 
             <section class="profile-info">
@@ -65,13 +65,26 @@
                 </div>
                 <p>View My: <a href="https://drive.google.com/file/d/1dZ_7NMbKstRjIguFZhIg7142hl5sXQVU/view?usp=sharing" target="_blank">Resume</a></p>
             </section>
+            <section class="navigation">
+                <div class="navigation-buttons">
+                    <button id="prev" class="music-btn"><i class="material-icons">skip_previous</i></button>
+                    <button id="play" class="music-btn"><i class="material-icons">play_arrow</i></button>
+                    <button id="pause" class="music-btn"><i class="material-icons">pause</i></button>
+                    <button id="next" class="music-btn"><i class="material-icons">skip_next</i></button>
+                </div>
+                <div class="song-info">
+                    <h3 class="song-title">Low</h3>
+                    <p class="song-artist">Flow Rida</p>
+                </div>
+            </section>
+            <audio src="./songs/Flo Rida - Low (feat. T-Pain).mp3" id="audio"></audio>
             <section class="contact-info">
                 <h4>Contacting Harold Aquino</h4>
                 <div class="contact-buttons">
                     <div>
-                        <a href="#contact" title="directs to contact"> 
+                        <a class="open-modal" title="opens modal"> 
                             <img src="./imgs/message-icon2.png" alt=""> 
-                            <p >Send Message</p>
+                            <p class="modal-innertext">Send Message</p>
                         </a>
                         <a class="open-modal" title="opens modal">
                             <img src="./imgs/add-to-friends-icon.png" alt=""> 
@@ -157,7 +170,7 @@
                 <h4>Harold Aquino's Blurbs</h4>
                 <div>
                     <h5 class="span">About me:</h5>
-                    <p>Front web developer with interest of creating fun personal projects</p>                    
+                    <p>Front Web Developer  </p>                    
                 </div>
 
     
@@ -186,7 +199,7 @@
             <div>
                 <h1>NBA Player Search</h1>
                 <h3>About:</h3>
-                <p>An application where a user can search nba players by their name or team displaying their profile picture, basic information, and a "view stats" button. Clicking the "view stats" button opens a popup that displays the players indepth profile and stat averages from all seasons.</p>
+                <p>An application where a user can search nba players by their name or team and be able to view their seasonal stats.</p>
                 <div class="project-buttons">
                     <a href="https://searchyourplayer.netlify.app" target="_blank">Live</a>
                     <a href="https://github.com/haroldaqu/search-nba-players" target="_blank">Code</a>
@@ -198,9 +211,7 @@
             <div>
                 <h1>Philippino Restaurant</h1>
                 <h3>About:</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem facere quidem mollitia amet
-                    fugiat a pariatur
-                    voluptatibus labore rem?</p>
+                <p>A single page restaurant website consturcted with javascript and dom manipulation through one div in HTML. </p>
                 <div class="project-buttons">
                     <a href="https://philscuisine.netlify.app/" target="_blank">Live</a>
                     <a href="https://github.com/haroldaqu/restaurant-page" target="_blank">Code</a>
@@ -223,50 +234,6 @@
 </div>
 
     
-    <!-- <div id="contact" class="contact">
-        <div>
-            <h4>Contact</h4>
-        </div>
-        <form action="">
-            <p>Have a question or comment?</p>
-            <div class="input">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Your name">
-                <small class="error"></small>
-            </div>
-            <div class="input">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Your e-mail">
-                <small class="error"></small>
-            </div>
-            <div class="input">
-                <label for="message">Message:</label>
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <small class="error"></small>
-            </div>
-
-            <div class="contact-buttons">
-                <button type="reset">Reset</button>
-                <button type="submit" id="submit">Submit</button>
-            </div>
-        </form>
-    </div> -->
- 
-
-    <!-- <article class="modal-container hide">
-        <div class="modal-content hide">
-            <div class="content-header">
-                <h3>Message</h3>
-                <button>X</button>
-            </div>
-            <div class="content-body">
-                <p id="statement">
-                    Hello
-                </p>
-                <Button>OK</Button>
-            </div>
-        </div>
-    </article> -->
     <script src="script.js"></script>
 </body>
 </html>

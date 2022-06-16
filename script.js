@@ -1,17 +1,8 @@
 // Hamburger Button for mobile
 const hamburgerButton = document.querySelector('.hamburger')
 const hamburgerChoices = document.querySelector('.hamburger-choices')
-const previewBtn = document.querySelectorAll('.preview')
-const projectModal = document.querySelector('.projects')
-const closeProjectsBtn = document.querySelector('.close-projects')
-
-
-
 
 hamburgerButton.addEventListener('click', () => hamburgerChoices.classList.toggle('hide'))
-// hamburgerButton.addEventListener('click', () => hamburgerChoices.style.display === 'flex')
-
-
 
 
 // Modal
@@ -25,6 +16,10 @@ openModal.forEach(button => button.addEventListener('click', (e) => {
     if (e.target.innerText.includes('Add to Friends')) {
         modalStatement.innerText = 'Friendship has been accepted!'
         funFact.innerText = 'I like friendship bracelets'
+    }
+    else if (e.target.innerText.includes('Send Message')) {
+        modalStatement.innerText = 'You can contact me at haroldgaquino@gmail.com'
+        funFact.innerText = 'Thank you for the message!'
     }
     else if (e.target.innerText.includes('Add to Group')) {
         modalStatement.innerText = 'Harold Aquino has been added to the Group'
@@ -49,20 +44,79 @@ openModal.forEach(button => button.addEventListener('click', (e) => {
     modalContent.classList.toggle('hide')
     modalContent.showModal()
 }))
+
 okayBtn.forEach(button => button.addEventListener('click', () =>  {
      modalContent.classList.toggle('hide')
     modalContent.close()
 }))
 
-previewBtn.forEach(button => button.addEventListener('click', () => {
-    projectModal.classList.toggle('hide')
-    projectModal.showModal()
-}))
 
-closeProjectsBtn.addEventListener('click', () => {
-    projectModal.classList.toggle('hide')
-    projectModal.close()
+
+// Songs
+const audio = document.getElementById('audio')
+const prevSong = document.getElementById('prev')
+const playSong = document.getElementById('play')
+const pauseSong = document.getElementById('pause')
+const nextSong = document.getElementById('next')
+const songTitle = document.querySelector('.song-title')
+const songArtist = document.querySelector('.song-artist')
+
+const musicList = [
+    {
+    source: './songs/Flo Rida - Low (feat. T-Pain).mp3',
+    title: 'Low',
+    artist: 'Flow Rida'
+    },
+    {
+    source: './songs/Coldplay - Viva La Vida.mp3',
+    title: 'Viva La Vida',
+    artist: 'Coldplay'
+    },
+    {
+    source: './songs/M.I.A. - Paper Planes.mp3',
+    title: 'Paper Planes',
+    artist: 'M.I.A'
+    },
+    {
+    source: './songs/Timbaland - Apologize.mp3',
+    title: 'Aplogize',
+    artist: 'Timbaland'
+    },
+]
+
+let songCount = 0;
+
+prevSong.addEventListener('click', () => {
+    songCount > 0 ? songCount-- : songCount = musicList.length - 1
+    audio.pause()
+    audio.src = musicList[songCount].source
+    audio.play()
+    songTitle.innerText = musicList[songCount].title
+    songArtist.innerText = musicList[songCount].artist
 })
+
+nextSong.addEventListener('click', () => {
+    songCount < (musicList.length - 1) ? songCount++ : songCount = 0
+    audio.pause()
+    audio.src = musicList[songCount].source
+    audio.play()
+    songTitle.innerText = musicList[songCount].title
+    songArtist.innerText = musicList[songCount].artist
+})
+
+playSong.addEventListener('click', () => {
+    pauseSong.classList.remove('change-bg')
+    audio.play()
+})
+
+pauseSong.addEventListener('click', () => {
+    pauseSong.classList.toggle('change-bg')
+    audio.pause()
+})
+
+
+
+
 
 
 
