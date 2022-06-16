@@ -1,6 +1,10 @@
 // Hamburger Button for mobile
 const hamburgerButton = document.querySelector('.hamburger')
 const hamburgerChoices = document.querySelector('.hamburger-choices')
+const previewBtn = document.querySelectorAll('.preview')
+const projectModal = document.querySelector('.projects')
+const closeProjectsBtn = document.querySelector('.close-projects')
+
 
 
 
@@ -42,8 +46,25 @@ openModal.forEach(button => button.addEventListener('click', (e) => {
         modalStatement.innerText = 'Thank you for ranking user as Top 1 in your friends'
         funFact.innerText = 'I hope that I am ranked 1 in your hiring list'
     }
-
+    modalContent.classList.toggle('hide')
     modalContent.showModal()
 }))
-okayBtn.forEach(button => button.addEventListener('click', () =>  modalContent.close()))
+okayBtn.forEach(button => button.addEventListener('click', () =>  {
+     modalContent.classList.toggle('hide')
+    modalContent.close()
+}))
+
+previewBtn.forEach(button => button.addEventListener('click', () => {
+    projectModal.classList.toggle('hide')
+    projectModal.showModal()
+}))
+
+closeProjectsBtn.addEventListener('click', () => {
+    projectModal.classList.toggle('hide')
+    projectModal.close()
+})
+
+
+
+
 

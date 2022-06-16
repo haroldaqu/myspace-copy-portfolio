@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Harold Aquino</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -20,23 +20,19 @@
         <div class="nav-bar-choices" id="nav-bar-choices">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#">Resume</a></li>
-                <!-- <li><a href="#">Breakdown</a></li> -->
+                <li><a href="#project">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1dZ_7NMbKstRjIguFZhIg7142hl5sXQVU/view?usp=sharing" target="_blank">Resume</a></li>
             </ul>
         </div>
     </nav>
 
     <ul class="hide hamburger-choices">
         <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Breakdown</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="https://drive.google.com/file/d/1dZ_7NMbKstRjIguFZhIg7142hl5sXQVU/view?usp=sharing" target="_blank">Resume</a></li>
     </ul>
 
-    <dialog class="modal-content">
+    <dialog class="modal-content hide">
         <div class="content-header">
             <h3>Message</h3>
             <button class="ok-btn">X</button>
@@ -49,14 +45,16 @@
     </dialog>
 
     <div id="home" class="whole-container">
+
         <article class="left-container">
+
             <section class="profile-info">
                 <h1>Harold Aquino</h1>
                 <div class="personal-info">
-                    <div>
-                         <img src="./imgs/myspace-default-img.png" alt="">
+                    <div class="personal-info-img">
+                         <img src="./imgs/IMG_1728.jpeg" alt="">
                     </div>
-                    <div>
+                    <div class="personal-info-text">
                         <div>
                             <p>Male</p>
                             <p>Los Angeles,</p>
@@ -65,7 +63,7 @@
                         <p>Last Login: 5/29/2008</p>
                     </div>
                 </div>
-                <p>View My: <a href="">Resume</a></p>
+                <p>View My: <a href="https://drive.google.com/file/d/1dZ_7NMbKstRjIguFZhIg7142hl5sXQVU/view?usp=sharing" target="_blank">Resume</a></p>
             </section>
             <section class="contact-info">
                 <h4>Contacting Harold Aquino</h4>
@@ -113,7 +111,7 @@
                 <p>Github URL:</p>
                 <a href="https://github.com/haroldaqu" target="_blank">https://github.com/haroldaqu</a>
                 <p>LinkedIn URL:</p>
-                <a href="">linkedin link</a>
+                <a href="https://linkedin.com/in/harold-aquino" target="_blank" >www.linkedin.com/in/harold-aquino</a>
             </section>
 
             <section class="personal-interest">
@@ -141,7 +139,7 @@
         </article>
         <article class="right-container">
             <section class="extended-network">
-                <h1>Harold Aquino's Skills</h1>
+                <h1>Skills</h1>
                 <div class="skils">
                     <img src="./imgs/html-icon.png" alt="">
                     <img src="./imgs/css-icon.png" alt="">
@@ -150,9 +148,10 @@
 
             </section>
             <section class="project-entrys">
-                <p class="project-header">Harold Aquino's Latest Project Entry</p>
-                <p>Search NBA Player (<a href="#projects">view more</a>)</p>
-                <p>Philipino Restaurant (<a href="#projects">view more</a>)</p>
+                <p class="project-header">Projects</p>
+                <p>Search NBA Player (<a href="#projects" >View</a>)</p>
+                <p>Philipino Restaurant (<a href="#projects" >View</a>)</p>
+                <p>Myspace Clone Portfolio (<a href="#projects">View</a>)</p></p>
             </section>
             <section class="about-me">
                 <h4>Harold Aquino's Blurbs</h4>
@@ -164,51 +163,67 @@
     
             </section>
             <section class="friends-info">
-                <h4>Harold Aquino's Friend Space</h4>
+               <h4>Harold Aquino's Friend Space</h4>
                 <div>
                     <h5>Harold Aquino has  <span class="span">1</span> friends.</h5>
                     <div class="tom">
-                        <a href="">Tom</a>
+                        <a>Tom</a>
                         <img src="./imgs/tom-myspace.jpeg" alt="">
+                        <img  class="online-now" src="./imgs/online-now.gif" alt="">
                     </div>                    
                 </div>
             </section>
+
         </article>
+
     </div>
 
-    <div id="projects" class="projects">
-        <h4>Featured Projects</h4>
-        <article class="project-contents">
-            <section>
-                <img src="./imgs/nba-player-search-pic1.png" alt="">
-                <div>
-                    <h1>NBA Player Search</h1>
-                    <h3>About:</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem facere quidem mollitia amet fugiat a pariatur voluptatibus labore rem?</p>
-                    <div class="project-buttons">
-                        <a>Live</a>
-                        <a href="https://github.com/haroldaqu/search-nba-players" target="_blank">Code</a>
-                    </div>
+<div id="projects" class="projects">
+    <h4>Featured Projects</h4>
+    <article class="project-contents">
+        <section>
+            <img src="./imgs/nba-player-search-ss.png" alt="">
+            <div>
+                <h1>NBA Player Search</h1>
+                <h3>About:</h3>
+                <p>An application where a user can search nba players by their name or team displaying their profile picture, basic information, and a "view stats" button. Clicking the "view stats" button opens a popup that displays the players indepth profile and stat averages from all seasons.</p>
+                <div class="project-buttons">
+                    <a href="https://searchyourplayer.netlify.app" target="_blank">Live</a>
+                    <a href="https://github.com/haroldaqu/search-nba-players" target="_blank">Code</a>
                 </div>
-            </section>
-            <section>
-                <img src="./imgs/phil-restaurant-pic1.png" alt="">
-                <div>
-                    <h1>Philippino Restaurant</h1>
-                    <h3>About:</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem facere quidem mollitia amet fugiat a pariatur
-                        voluptatibus labore rem?</p>
-                    <div class="project-buttons">
-                        <a>Live</a>
-                        <a href="https://github.com/haroldaqu/restaurant-page" target="_blank">Code</a>
-                    </div>
+            </div>
+        </section>
+        <section>
+            <img src="./imgs/phils-cuisine-ss.png" alt="">
+            <div>
+                <h1>Philippino Restaurant</h1>
+                <h3>About:</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam autem facere quidem mollitia amet
+                    fugiat a pariatur
+                    voluptatibus labore rem?</p>
+                <div class="project-buttons">
+                    <a href="https://philscuisine.netlify.app/" target="_blank">Live</a>
+                    <a href="https://github.com/haroldaqu/restaurant-page" target="_blank">Code</a>
                 </div>
-            </section>
-        </article>
-    </div>
+            </div>
+        </section>
+        <section>
+            <img src="./imgs/portfolio-ss.png" alt="">
+            <div>
+                <h1>Myspace Clone Portfolio</h1>
+                <h3>About:</h3>
+                <p>A Myspace page clone when viewing another users profile with the contents changed to fit as my portfolio.</p>
+                <div class="project-buttons">
+                    <a href="#home">Home</a>
+                    <a href="https://github.com/haroldaqu/myspace-copy-portfolio" target="_blank">Code</a>
+                </div>
+            </div>
+        </section>
+    </article>
+</div>
 
     
-    <div id="contact" class="contact">
+    <!-- <div id="contact" class="contact">
         <div>
             <h4>Contact</h4>
         </div>
@@ -235,8 +250,8 @@
                 <button type="submit" id="submit">Submit</button>
             </div>
         </form>
-    </div>
-
+    </div> -->
+ 
 
     <!-- <article class="modal-container hide">
         <div class="modal-content hide">
