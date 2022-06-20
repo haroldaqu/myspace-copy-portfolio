@@ -676,7 +676,7 @@ section > div > .project-buttons > a {
 }
 
 .content-body {
-  outline: solid red;
+  /* outline: solid red; */
   height: 80%;
   padding: 1rem;
   display: flex;
