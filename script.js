@@ -22,24 +22,24 @@ openModal.forEach(button => button.addEventListener('click', (e) => {
         funFact.innerText = 'Thank you for the message!'
     }
     else if (e.target.innerText.includes('Add to Group')) {
-        modalStatement.innerText = 'Harold Aquino has been added to the Group'
+        modalStatement.innerText = 'Added to group!'
         funFact.innerText = 'I was a drummer in a band group'
     }
     else if (e.target.innerText.includes('Instant Message')) {
-        modalStatement.innerText = 'Instant Message is not available at this time'
+        modalStatement.innerText = 'Instant Message coming soon...'
         funFact.innerText = 'I like instant ramen'
     }
     else if (e.target.innerText.includes('Add to Favorites')) {
-        modalStatement.innerText = 'Harold Aquino has been added to your Favorites'
-        funFact.innerText = 'My favorite food is Pad Thai'
+        modalStatement.innerText = 'Added to favorites!'
+        funFact.innerText = 'My favorite food is pad thai'
     }
     else if (e.target.innerText.includes('Block User')) {
-        modalStatement.innerText = 'Error: user can\'t be blocked sorry!'
+        modalStatement.innerText = 'User blocked!'
         funFact.innerText = 'Most blocks in a single NBA game is 17 '
     }
     else if (e.target.innerText.includes('Rank User')) {
-        modalStatement.innerText = 'Thank you for ranking user as Top 1 in your friends'
-        funFact.innerText = 'I hope that I am ranked 1 in your hiring list'
+        modalStatement.innerText = 'User ranked!'
+        funFact.innerText = 'Myspace ruined friendships with rank system'
     }
     modalContent.classList.toggle('hide')
     modalContent.showModal()
